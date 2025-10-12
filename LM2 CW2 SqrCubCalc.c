@@ -14,7 +14,8 @@ int main (void)
     cub = sqr * num;
 
     //Result
-    printf("Square: %d\nCube: %d", sqr, cub);
+    printf("Square of %d: %d\n",  num, sqr);
+    printf("Cube   of %d: %d\n",  num, cub);
 
 
     return 0;
