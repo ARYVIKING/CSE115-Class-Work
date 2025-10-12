@@ -1,3 +1,5 @@
+/*A program where the user enters two GPS coordinates (x1,y1, and x2,y2),
+and the program calculates the straight-line distance.*/
 #include <stdio.h>
 #include <math.h>
 
