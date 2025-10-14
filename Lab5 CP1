@@ -5,17 +5,17 @@
 int main (void)
 {
     //Defining Variables
-    int a, b, c;
+    float a, b, c;
 
     //Taking Inputs
     printf("Enter the value of a and b: ");
-    scanf("%d%d", &a, &b);
+    scanf("%f%f", &a, &b);
 
     //Computation
     c = sqrt(pow(b,2)+ pow(b,2));
 
     //Result
-    printf("The value of c is %d ", c);
+    printf("The value of c is %f ", c);
 
 
     return 0;
