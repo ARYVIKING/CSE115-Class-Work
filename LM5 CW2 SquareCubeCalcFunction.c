@@ -1,3 +1,4 @@
+//Square and Cube Calculator (Using Function)
 #include <stdio.h>
 
 //Function Call
