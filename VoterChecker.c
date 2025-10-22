@@ -1,3 +1,4 @@
+//A Program To detect Voting eligibility by getting age and gender (if else if variant)
 #include <stdio.h>
 
 int main (void)
