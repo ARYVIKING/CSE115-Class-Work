@@ -2,26 +2,32 @@
 #include <stdio.h>
 #include <math.h>
 
-double calculateArea(double a, double b);     // Function Call
+ // Function Call
+double calculateArea(double a, double b);    
 
 int main (void)
 {
 
-    double a, b, result;                      //Defining Variables
+    //Declaring Variables
+    double a, b, result;                    
 
-    printf("Enter the value of a and b: ");   //Taking Inputs
+    //Taking Inputs
+    printf("Enter the value of a and b: ");   
     scanf("%lf%lf", &a, &b);
 
-    result = calculateArea(a,b);             //Operation
+    //Operation
+    result = calculateArea(a,b);             
     
     
-    printf("Area: %.3f", result);            //Result
+    //Result
+    printf("Area: %.3f", result);            
 
-    return 0;
+    return 0;    
 }
 
 
-double calculateArea(double a, double b)     //Function Define
+//Function Defination
+double calculateArea(double a, double b)     
 {
 
     double area = a * b;
