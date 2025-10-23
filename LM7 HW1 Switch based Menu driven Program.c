@@ -2,13 +2,12 @@
 #include <stdio.h>
 
 int LeapDetect(int year); // Leap year detector function
-double factorial(double n);     // Factorial detector function
+int factorial(int n);     // Factorial detector function
 int LargerNum (int, int, int); // Larger number detector function
 int main (void)
 {
     //Declaring Variables
-    int choice, year, leap,  num1, num2, num3;
-    double num;
+    int choice, year, leap, num, num1, num2, num3;
 
     //Menu
     printf("1)Check Leap Year\n");
@@ -28,8 +27,8 @@ int main (void)
 
     case 2: // Factorial Calculate
     printf("Enter a positive Integer: ");
-    scanf("%lf", &num);
-    printf("\nFactorial of %.lf = %.lf\n", num, factorial(num)/*Function Call*/);
+    scanf("%d", &num);
+    printf("\nFactorial of %d = %d\n", num, factorial(num)/*Function Call*/);
     break;
 
     case 3: //Larger number detect
@@ -37,6 +36,7 @@ int main (void)
     break;
 
     case 4: // Exit Program
+        printf("\nPress Enter to confirm exit\n");
     break;
     }
     return 0 ;
@@ -44,7 +44,7 @@ int main (void)
 
 
 
-//Leap year detector function (1)
+// 1)Leap year detector function 
 int LeapDetect(int year)
 {
     if (( year % 400 == 0  ) || (year % 100  && year % 4 == 0 ))
@@ -58,8 +58,8 @@ int LeapDetect(int year)
 }
 
 
-//Factorial calculator function(2)
-double factorial(double n)
+// 2) Factorial calculator function
+int factorial(int n)
  {
     if (n)
      {
@@ -71,31 +71,29 @@ double factorial(double n)
 
 
 
-//Larger number of 3 detector(3)
+// 3) Larger number of 3 detector
 int LargerNum (int num1, int num2, int num3)
  {
-    printf("Enter three different Integers \n Enter 1st Number: ");
+    printf("\nEnter Three Different Integers \n Enter 1st Number: ");
     scanf("%d", &num1);
     printf("\n Enter 2nd Number: ");
     scanf("%d", &num2);
     printf("\n Enter 3rd Number: ");
     scanf("%d", &num3);
 
- if (num1 > num2 && num1 > num3)
+ if (num1 > num2)
     {
-        printf("\nThe Larger Number is %d\n", num1);
-    }
-    else if (num2 > num1 && num2 > num3)
-    {
-        printf("\nThe Larger Number is %d\n", num2);
-    }
-    else if (num3 > num2 && num3 > num1)
-    {
-        printf("\nThe Larger Number is %d\n", num3);
+        if(num1 > num3)
+            printf(" %d is the largest number", num1);
+        else
+            printf(" %d is the largest number", num3);
     }
     else
     {
-        printf("Multiple Numbers are Equal\n Try again..\n");
+        if(num2 > num3)
+            printf(" %d is the largest number", num2);
+        else
+            printf(" %d is the largest number", num3);
     }
-    return 0 ;
+
 }
