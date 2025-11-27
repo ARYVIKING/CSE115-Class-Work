@@ -37,7 +37,7 @@ void Calc(double *num1, double *num2, double *result, char *op)
     printf("3. Multiplication\n");
     printf("4. Division\n");
 
-    printf("Enter your choice(1-4):");
+    printf("Enter your choice (1-4):");
     scanf("%d", &choice);
 
     switch(choice)
