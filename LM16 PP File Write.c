@@ -35,6 +35,6 @@ int main(void)
         students[i].roll = roll;
         students[i].cgpa = cgpa;
 
-    }
+    }fclose(fp);
     return 0;
 }
